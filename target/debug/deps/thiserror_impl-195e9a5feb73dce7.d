@@ -1,0 +1,12 @@
+/home/sangeet/flappy-bird/target/debug/deps/libthiserror_impl-195e9a5feb73dce7.so: /home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/lib.rs /home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/ast.rs /home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/attr.rs /home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/expand.rs /home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/fmt.rs /home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/generics.rs /home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/prop.rs /home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/valid.rs
+
+/home/sangeet/flappy-bird/target/debug/deps/thiserror_impl-195e9a5feb73dce7.d: /home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/lib.rs /home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/ast.rs /home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/attr.rs /home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/expand.rs /home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/fmt.rs /home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/generics.rs /home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/prop.rs /home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/valid.rs
+
+/home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/lib.rs:
+/home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/ast.rs:
+/home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/attr.rs:
+/home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/expand.rs:
+/home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/fmt.rs:
+/home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/generics.rs:
+/home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/prop.rs:
+/home/sangeet/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.39/src/valid.rs:

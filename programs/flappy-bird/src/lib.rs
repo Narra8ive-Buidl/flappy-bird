@@ -2,7 +2,7 @@ use anchor_lang::prelude::*;
 use anchor_spl::associated_token::AssociatedToken;
 use anchor_spl::token::{self, Mint, MintTo, Token, TokenAccount};
 
-declare_id!("37ZT5GsJGt2hNHL5i2Txnijz3DfXKHYG34yVxc57uzKR");
+declare_id!("Du3i8JCwm2QfuieJDgkUqaAmX69fRNEqSpy4aN5297DY");
 
 #[program]
 pub mod flappy_bird {
