@@ -12,6 +12,7 @@ import { Connection, PublicKey, clusterApiUrl } from '@solana/web3.js'
 import { Program, AnchorProvider, BN, web3 } from '@project-serum/anchor'
 import idl from './utils/idl.json'
 import * as token from '@solana/spl-token'
+import Modal from "./components/Modal";
 
 const wallets = [ new PhantomWalletAdapter(), new SolflareWalletAdapter()]
 const programId = new PublicKey("E3KnktUoT56BnmmMRemi4yV3LLxtpEf5CaKYHBXtTeks")
@@ -44,6 +45,7 @@ function App() {
 
   //my additions
   const wallet = useWallet()
+  const [displayMsg, setDisplayMsg] = useState('')
 
   /*const checkIfWalletIsConnected = async () => {
     try {
@@ -164,9 +166,16 @@ function App() {
   const handler = async () => {
     if (!isStart) {
       if (score>0) {
-        await mintReward(score * 100)
+        try {
+          setScore(0)
+          await mintReward(score * 100)
+          setDisplayMsg(`You minted ${score} BRD`)
+          setTimeout(()=>{setDisplayMsg('')}, 4000)
+        } catch (err) {
+          alert(`Error minting tokens ${err}`)
+        }
+        
       }
-      setScore(0)
       setIsStart(true);
     }
     else if (birdpos < BIRD_HEIGHT) setBirspos(0);
@@ -182,7 +191,12 @@ function App() {
         </div>)
       }
       {
-        wallet.connected &&
+        wallet.connected && displayMsg &&
+          <Modal msg={displayMsg}></Modal>
+        
+      }
+      {
+        wallet.connected && !displayMsg &&
         <Home onClick={handler}>
         <span>Score: {score}</span>
         <Background height={WALL_HEIGHT} width={WALL_WIDTH}>
