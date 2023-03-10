@@ -5,7 +5,7 @@ import  Header from './Header';
 
 
 export const Layout=({ walletAddress })=>{
-  console.log("address",walletAddress)
+  //console.log("address",walletAddress)
     return(
   <SBox className='Container'>
   <Header/>

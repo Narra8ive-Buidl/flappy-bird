@@ -1,3 +1,3 @@
 cargo:rerun-if-changed=build/main.rs
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/sangeet/flappy-bird/target/bpfel-unknown-unknown/release/build/typenum-30e8f3da53a35926/out/consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=/home/sangeet/flappy-bird/target/bpfel-unknown-unknown/release/build/typenum-30e8f3da53a35926/out/op.rs
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/shubh/temp-delete-later/flappy-bird/target/bpfel-unknown-unknown/release/build/typenum-30e8f3da53a35926/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/home/shubh/temp-delete-later/flappy-bird/target/bpfel-unknown-unknown/release/build/typenum-30e8f3da53a35926/out/op.rs
