@@ -99,13 +99,13 @@ function App() {
     try {
       const provider = getProvider()
       const program = new Program(idl, programId, provider)
-      const secretKey = [178,181,67,56,71,65,160,78,55,92,246,62,119,29,245,107,61,38,32,245,9,140,222,236,152,68,177,57,235,88,241,57,253,62,232,67,22,3,121,186,102,151,165,52,30,231,187,245,39,119,97,249,223,84,195,165,93,253,17,55,48,123,251,209]
-      const mintAuth = web3.Keypair.fromSecretKey(secretKey, true)
+      const secretKey = Uint8Array.from([178,181,67,56,71,65,160,78,55,92,246,62,119,29,245,107,61,38,32,245,9,140,222,236,152,68,177,57,235,88,241,57,253,62,232,67,22,3,121,186,102,151,165,52,30,231,187,245,39,119,97,249,223,84,195,165,93,253,17,55,48,123,251,209])
+      const mintAuth = web3.Keypair.fromSecretKey(secretKey, { skipValidation: true })
       const rewardMint = new PublicKey('BkG1tcC535nGSwaTY3RwvzdMwiVh8VTXmh7KQ189Jjye')
       const tokenAccount = token.getAssociatedTokenAddressSync(rewardMint, wallet.publicKey)
       await program.methods.mintReward(new BN(amount))
                            .accounts({
-                              mintAuth,
+                              mintAuth: mintAuth.publicKey,
                               user: wallet.publicKey,
                               rewardMint,
                               tokenAccount
